@@ -35,7 +35,7 @@ namespace GoodReads
             int count = 0;
             foreach (var book in Books)
             {
-                count += book.Pages;
+                count += book.getPages();
             }
 
             return count;

@@ -8,9 +8,9 @@ namespace GoodReads
 {
     internal class Book
     {
-        public string Title;
-        public string Author;
-        public int Pages;
+        private string Title;
+        private string Author;
+        private int Pages;
 
 
         public Book(string title, string author, int pages)
@@ -18,6 +18,21 @@ namespace GoodReads
             Title = title;
             Author = author;
             Pages = pages;
+        }
+
+        public string getTitle()
+        {
+            return Title;
+        }
+
+        public string getAuthor()
+        {
+            return Author;
+        }
+
+        public int getPages()
+        {
+            return Pages;
         }
     }
 }
